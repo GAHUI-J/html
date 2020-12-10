@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="practice8.js"></script>
+  <style>
+    :root {
+      --bg-Color : 70px; 
+    }
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    body{
+      /*1) display: grid;
+      grid-template-columns: repeat(4,1fr); */
+    }
+    div{
+      /*1)*/
+      display: inline-block; /*줄바꿈을 해서 블록 사이마다 공백 생김*/
+      width: 25%;
+      height: 50px;
+      float: left; /*공백 없애기*/
+      text-align: center;
+      line-height: var(--bg-Color);
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+</body>
+</html>

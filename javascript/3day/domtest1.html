@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    b {
+      background-color: yellow;
+    }
+
+  </style>
+
+  <script>
+//     window.addEventListener("load", init);
+
+// function init(){
+//   const $edu = document.getElementById('edu'); 
+//   const $btn = document.getElementsByClassName("btn")[0]; //클래스는 여러 개가 올 수 있기 때문에 컬렉션으로 반환함
+
+//   $btn.addEventListener("click", function(){
+//     console.log('버튼 클릭됨!!');
+//     $edu.style.backgroundColor = "green";
+//     $edu.style.color = "white";
+//     $edu.style.fontSize = "2em";
+//   });
+// }
+  </script>
+  <script defer src = "domtest1.js"></script>
+
+  <!-- 
+  defer : dom 트리 생성 후 js코드 실행
+  async : dom 트리와 병행해서 js코드 실행
+ -->
+
+  <!-- <script>//dom tree가 다 만들어진 상태에서,,, -> 안 만들어진 상태에서 찾으려고 하면 null값이 뜬다
+  const $edu = document.getElementById('edu'); //태그 이름, ID, 클래스로 찾을 수 있다
+  console.log($edu);
+  </script>  -->
+
+  
+</head>
+<body> 
+  <b id="edu">울산KH정보교육원</b> 
+  <button class ="btn">클릭</button> 
+  <textarea id="contents" cols="30" rows="10"></textarea>
+  <button class="btn2">컨텐트 수정</button>
+</body>
+</html>

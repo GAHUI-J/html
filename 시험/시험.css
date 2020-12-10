@@ -1,0 +1,103 @@
+* {margin:0; padding:0;}
+
+/* common */
+.container{
+  width:600px; margin:0 auto;
+  text-align: center;
+}
+
+
+ul{list-style-type: none;}
+
+/* uppermost */
+.uppermost{
+  background-color: black;
+}
+.container-up{
+  background-color: black;
+  color: white;
+  text-align: right;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* header */
+header{
+  background-color: white;
+}
+.container-h{
+  background-image: url("https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262__340.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+}
+  
+
+/* nav */
+nav{
+  background-color: white;
+  text-align:center;
+}
+.container-n{
+  background-color: black;
+  height: 50px;
+  display: inline-block
+
+}
+
+
+nav li{
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  margin-left: 30px; 
+}
+
+
+li:hover{text-decoration: underline;}
+
+
+
+/* main */
+main{
+  background-color: white;
+}
+.container-m{
+  overflow: hidden;
+}
+.container-m section{
+  float:left;
+}
+.container-m section.s1{
+  width:20%;
+  background-color: lightskyblue;
+}
+.container-m section.s2{
+  width:80%;
+  background-color: lightcyan;
+}
+
+/* footer */
+footer{
+  background-color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  
+  
+}
+.container-f{
+  background-color: grey;
+  height: 70px;
+  
+}
+
+.clearfix {
+  clear:both; /*float의 왼쪽,오른쪽흐름을 차단*/
+}

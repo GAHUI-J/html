@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자바스크립트</title>
+  <script>
+    // let x= 10;
+    // let y= 20;
+    // let sum = x+y;
+    // alert("x+y="+sum);
+
+    // window.document.write("welcome"); //window 생략 가능
+    // // prompt("이름은?", "홍길동");
+    // let name = window.prompt("이름은?","홍길동");
+    // console.log("name="+name);
+    // window.alert("알립니다!");
+    // let result = window.confirm("수강여부");
+    // console.log("result="+result);
+  </script>
+</head>
+<body>
+  <h3>월화수목금토일</h3>
+  <hr>
+  <script>
+
+    
+    let day = prompt("요일을 입력하세요", "");
+
+    if(day==null||day.length==0){
+      alert("입력값이 잘못 되었습니다");
+    }else{
+    switch(day){
+        case "금": case "토": case "일":
+        document.write(day+"요일은 휴일");
+        break;
+        case "월": case "화": case "수": case "목" : result = "출근";
+        document.write(day+"요일은 출근");
+        break;
+        default:
+          document.write("월~일 입력 바랍니다")
+      }
+    }
+      
+
+
+  
+
+
+
+
+  </script>
+  
+</body>
+</html>

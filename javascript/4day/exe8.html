@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    //case1)익명함수
+    window.addEventListener('load', function(){
+    const elem = document.getElementById('myBody');
+    if(elem == null){
+      alert('body is not made yet');
+    } 
+    }); 
+  </script>
+  <!-- 돔트리가 완성되지 않았기 때문에 경고창이 뜬다(elem == null)  -->
+  <!-- but, window.addEventListener 추가시 결과가 밑과 같음 -->
+
+  <!-- 람다식
+   window.addEventListener('load', () => {
+    const elem = document.getElementById('myBody');
+    if(elem == null){
+      alert('body is not made yet');
+    } 
+  }); 
+  -->
+
+  <!-- case2) 
+  window.addEventListener('load',init);
+  function init(){
+    const elem = document.getElementById('myBody');
+    if(elem == null){
+      alert('body is not made yet');
+    } 
+  } -->
+</head>
+<body id="myBody">
+  <p id="first">hello</p>
+  <!-- <script>
+    const elem = document.getElementById('myBody');
+    if(elem == null){
+      alert('body is not made yet');
+    }
+  </script> 위에서 돔트리가 다 만들어지고 난 후 id를 찾음, hello 출력-->
+</body>
+</html>

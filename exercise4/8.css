@@ -1,0 +1,12 @@
+body{
+  background-color: yellow;
+}
+
+p{
+  text-align: center;
+  font-size: 32px;
+}
+
+p:nth-last-of-type(2)>span {
+  background-color: violet;
+}

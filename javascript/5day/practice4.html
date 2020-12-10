@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img{
+      width: 30px; height: 30px; 
+      position: fixed;
+      /* left: 100px;
+      top: 200px; */
+      transition: 0.05s; /*속도*/
+      }
+  </style>
+</head>
+<body>
+  <h3>이미지 커서 만들기</h3>
+  <hr>
+  <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti ut explicabo ad ex natus, cum quidem obcaecati rerum id recusandae molestias accusantium accusamus? Provident neque repellendus sequi iusto nobis reiciendis?
+  </p>
+  <div>
+    <img src="https://lh3.googleusercontent.com/proxy/fI41XG-9JmeExZviAOALhzK1eC9hjK2qYvRSKm5UcbEhtt8uV3OqlC8I9TcTBhry-Sqbjq3BcLZN7oBFxJ28Viu3SSiqRJZ-GlV4RsW9PpvKyuEYnY1ANPKUx9zboPfSUIFHuuRZdzJj7zM64Q" alt="">
+  </div>
+  <script>
+    const $img = document.querySelector("img");
+    document.addEventListener("mousemove",function(evt){
+      // $img.style.left = `${evt.clientX}px`;
+      // $img.style.top = `${evt.clientY}px`;
+      $img.style.left = evt.clientX + 'px';
+      $img.style.top = evt.clientY + 'px';
+    });
+  </script>
+  
+</body>
+</html>

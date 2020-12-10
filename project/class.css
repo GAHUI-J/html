@@ -1,0 +1,52 @@
+*{margin: 0px; padding: 0px;} /*초기화하고 시작*/
+ul{list-style: none;}
+a{text-decoration: none;} /*링크 밑줄 제거*/
+
+header{
+    width: 960px; /*메인 이미지 너비 사이즈와 같게*/
+    height: 95px;
+    background-color: white;
+    /*header가 부모역할 -> position:relative*/
+    position: relative;
+}
+
+/*자식들 -> position:absolute*/
+#logo{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+#top_menu{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: white;
+}
+
+#top_menu a {color: black;}
+
+nav{
+    position: absolute;
+    bottom: 10px;
+    left: 220px;
+    font-size: 20px;
+
+}
+
+nav li{
+    display: inline;
+    margin-left: 30px;
+}
+
+nav li a{color: black;}
+
+
+footer{
+    width: 960px; /*헤더와 같은 사이즈*/
+    height: 90px;
+    background-color: grey;
+    text-align: center;
+}
+
+#page{width: 820px; margin: 0px auto;}

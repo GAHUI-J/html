@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+    .box{
+      background-color: gray;
+      overflow: hidden;
+      outline: 1px solid red;
+    }
+
+    .box>.wrapper div{ box-sizing: border-box;
+      /* width: 60px; height: 40px; */
+      background-color: #333;
+      color: white;
+      text-align: center;
+      float: left;
+      display: inline-block;
+      padding: 5px 10px;
+      width: 61px;
+      
+
+    }
+
+    .wrapper{
+      margin: 0 auto;
+      width: 183px;
+      /* border: 5px solid blue; */
+      overflow: hidden;
+    }
+
+
+    
+  </style>
+</head>
+
+
+<body>
+
+  <div class="box">
+    <div class="wrapper">
+      <div class="item1">item1</div>
+      <div class="item2">item2</div>
+      <div class="item3">item3</div>
+    </div>
+  </div>
+
+</body>
+</html>
